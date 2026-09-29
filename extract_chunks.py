@@ -88,7 +88,7 @@ CANONICAL = [
     ("债券相关情况", ("债券相关情况", "债券情况")),
     ("环境、社会与治理", ("环境、社会与治理", "环境和社会", "社会责任", "ESG")),
     ("公司简介与主要财务指标", (
-        "公司简介", "主要财务指标", "公司基本情况", "会计数据和财务指标",
+        "公司简介", "本行简介", "主要财务指标", "公司基本情况", "会计数据和财务指标",
         "财务数据和财务指标", "财务摘要", "主要会计数据",
     )),
     ("重要提示与释义", ("重要提示", "释义", "备查文件")),
@@ -106,6 +106,8 @@ DOT_LEADER = re.compile(r"[.·…]{3,}")
 # 文档标题类书签（如「…2026年半年度报告_定稿」），不是章节，须排除
 DOC_TITLE = re.compile(r"半年度报告|年度报告|季度报告|上传稿|定稿|正文\)|_定稿")
 NUMERIC = re.compile(r"^[\d,.\-()%<>≤≥]+$")
+# 标题前的编号（「1 财务摘要」「3.2 业务回顾」）；不剥掉的话关键词匹配认不出来
+TITLE_NUM = re.compile(r"^\d+(?:[.\-、]\d+)*[.、]?")
 
 
 # --------------------------------------------------------------------------- #
@@ -139,11 +141,11 @@ def n_tokens(text: str) -> int:
 
 
 def canonical_section(raw: str) -> str:
-    flat = re.sub(r"\s+", "", raw)
+    flat = re.sub(r"\s+", "", raw).lstrip("|")   # 合并行可能带前导「| 」
     for canon, keys in CANONICAL:
         if any(k in flat for k in keys):
             return canon
-    return raw.strip() or UNKNOWN_SECTION
+    return raw.strip().lstrip("|").strip() or UNKNOWN_SECTION
 
 
 # --------------------------------------------------------------------------- #
@@ -326,7 +328,7 @@ def is_heading(line: str) -> bool:
     # 目录行剥掉点线引导符和尾部页码后，才可能是干净标题
     if DOT_LEADER.search(s):
         s = re.sub(r"[.·…]+\s*\d*\s*$", "", s)
-    flat = re.sub(r"\s+", "", s)
+    flat = TITLE_NUM.sub("", re.sub(r"\s+", "", s)).lstrip("|")
     if not flat or len(flat) > 30:
         return False
     for canon, keys in CANONICAL:
@@ -367,7 +369,11 @@ def detect_sections(doc, pages_lines: list[list[str]]) -> tuple[list[list[str]],
     toc_pages = set()
     for i, lines in enumerate(pages_lines):
         n_head = sum(1 for l in lines if is_heading(l))
-        n_dots = sum(1 for l in lines if TOC_LINE.search(l))
+        # 用「点线引导符」而不是「点线+页码」判目录页：工行的目录点线被排版切成
+        # 「... ...」（点之间有空格），TOC_LINE 要求结尾是页码，匹配不上；目录页
+        # 漏判后页面里的「释义/公司治理」等条目会被当成正文标题，把后面几十页
+        # 全都带偏（实测工行 12 个块被误标成「重要提示与释义」）。
+        n_dots = sum(1 for l in lines if DOT_LEADER.search(l))
         if n_head >= 4 or n_dots >= 4:
             toc_pages.add(i)
 
