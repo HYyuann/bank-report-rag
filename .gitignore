@@ -3,9 +3,14 @@
 .env.*
 !.env.example
 
-# 下载的财报 PDF 与中间产物（体积大，可重新下载）
+# 下载的财报 PDF 与中间产物（体积大，可重新下载/重新生成）
 files/
 *.part
+extract/
+chunks.jsonl
+*.tmp
+
+# 注意：extraction_report.md 是结论页素材，必须提交，不要加进来
 
 # 虚拟环境
 .venv/
@@ -17,5 +22,7 @@ __pycache__/
 *.egg-info/
 
 # 探测/调试留下的临时文件
-probe_*.json
+probe_*
 org_*.json
+extract_run.log
+sample_chunks.md
