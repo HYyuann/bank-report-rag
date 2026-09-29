@@ -1,0 +1,21 @@
+# 环境变量（含密钥，绝不入库）
+.env
+.env.*
+!.env.example
+
+# 下载的财报 PDF 与中间产物（体积大，可重新下载）
+files/
+*.part
+
+# 虚拟环境
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 探测/调试留下的临时文件
+probe_*.json
+org_*.json

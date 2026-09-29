@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-29T13:57:30+08:00",
+  "report_period": "2026-06-30",
+  "source": "巨潮资讯网 (cninfo.com.cn)",
+  "count": 2,
+  "reports": [
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "title": "招商银行股份有限公司2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225530237.PDF",
+      "filename": "600036_招商银行_2026H1.pdf",
+      "size_bytes": 2581545,
+      "pages": 246,
+      "downloaded_at": "2026-09-29T13:57:25+08:00"
+    },
+    {
+      "code": "000001",
+      "name": "平安银行",
+      "title": "2026年半年度报告",
+      "announce_date": "2026-08-15",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-15/1225475344.PDF",
+      "filename": "000001_平安银行_2026H1.pdf",
+      "size_bytes": 1472390,
+      "pages": 221,
+      "downloaded_at": "2026-09-29T13:57:30+08:00"
+    }
+  ]
+}
