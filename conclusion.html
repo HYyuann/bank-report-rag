@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>12 家 A 股银行 2026 半年报知识库 · 一页结论</title>
+<style>
+  @page { size: A4; margin: 9mm 10mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 190mm; margin: 0 auto;
+    font: 7.0pt/1.27 "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB",
+          "Source Han Sans SC", "Noto Sans CJK SC", sans-serif;
+    color: #111; overflow-x: hidden;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  @media print { body { width: auto; } }
+
+  h1 { font-size: 12.5pt; margin: 0 0 .8mm; letter-spacing: .3px; }
+  h1 span { color: #1a4d8f; }
+  .sub { font-size: 6.6pt; color: #555; margin: 0 0 1.6mm; }
+  h2 {
+    font-size: 7.4pt; color: #1a4d8f; margin: 2.3mm 0 1.1mm;
+    border-bottom: .6pt solid #c7d2de; padding-bottom: .6mm;
+  }
+  p { margin: 0 0 1.05mm; }
+  b, strong { color: #0f2f57; }
+  .k { font-family: Consolas, "Courier New", monospace; font-size: 6.7pt;
+       background: #f1f4f8; padding: 0 .5mm; }
+
+  /* 方法与语料 */
+  .meta { background: #f5f7fa; border-left: 2pt solid #1a4d8f;
+          padding: 1.2mm 1.8mm; margin-bottom: .6mm; }
+  .meta div { margin: .35mm 0; }
+
+  /* 表格 */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th, td { border: .5pt solid #b9c4d1; padding: .5mm .85mm; vertical-align: top;
+           word-break: break-word; overflow-wrap: anywhere; }
+  th { background: #e8edf4; font-weight: 600; font-size: 6.4pt; text-align: left;
+       color: #14375f; }
+  td { font-size: 6.5pt; }
+  .c { text-align: center; }
+  .ov td, .ov th { font-size: 6.9pt; }
+  .ov td.n { text-align: center; font-size: 7.4pt; }
+  .t3 { font-weight: 700; }                 /* 混合列强调 */
+  .dim { color: #888; }
+  .ok { color: #17692f; font-weight: 600; }
+  .rj { color: #9a3b12; }
+
+  /* 案例 */
+  .case { margin: 0 0 1.05mm; }
+  .case .hd { color: #14375f; font-weight: 700; }
+
+  /* 结论 */
+  ol.lc { margin: 0; padding-left: 4.6mm; }
+  ol.lc li { margin: 0 0 .85mm; }
+
+  /* 一句话结论 */
+  .one { border: .9pt solid #1a4d8f; background: #f2f6fb;
+         padding: 1.3mm 1.8mm; margin: 1.3mm 0 0; }
+  .one .lbl { font-size: 6.6pt; color: #1a4d8f; font-weight: 700;
+              letter-spacing: .4px; }
+  .one p { margin: .6mm 0 0; font-size: 7.6pt; line-height: 1.4; }
+
+  footer { margin-top: 1.5mm; padding-top: .8mm; border-top: .5pt solid #c7d2de;
+           font-size: 6.4pt; color: #666; display: flex;
+           justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<h1>12 家 A 股银行 2026 半年报知识库 · <span>一页结论</span></h1>
+<p class="sub">混合检索（向量 + BM25 + RRF + 公司过滤）问答系统的建设与 10 题实测评测</p>
+
+<h2>方法与语料</h2>
+<div class="meta">
+  <div><b>语料</b>：12 家 A 股银行 2026 年半年度报告 · 3,289 页 → 切块 <b>2,553</b> 块（含表格重建）</div>
+  <div><b>检索</b>：bge-small-zh-v1.5（512 维）与 BM25 两路各取 top-10，RRF（k=60）融合去重后取 top-6；
+       <b>公司过滤</b>：问题中出现银行简称/代码时先跑公司限定轮，同时保留全局兜底轮；
+       <b>口径/同义词扩展</b>（净息差→净利息收益率/净利差/NIM）可开关，默认开</div>
+  <div><b>生成</b>：DeepSeek；结论标注「公司 · 章节 · 页码」，证据不足时回答「检索到的材料无法回答」</div>
+</div>
+
+<h2>结果概览（10 题 × 3 配置 = 30 格）</h2>
+<table class="ov">
+  <colgroup><col style="width:26%"><col style="width:26%"><col style="width:24%"><col style="width:24%"></colgroup>
+  <tr><th>配置</th><th>对 / 部分对 / 拒答 / <b>错</b></th>
+      <th>单公司题 top-6 命中均值</th><th>单公司题首条正确率</th></tr>
+  <tr><td>只用向量</td><td class="n">3 / 1 / 6 / <b>0</b></td><td class="n">4.29 / 6</td><td class="n">7 / 7</td></tr>
+  <tr><td>只用 BM25</td><td class="n">4 / 0 / 6 / <b>0</b></td><td class="n">1.43 / 6</td><td class="n">2 / 7</td></tr>
+  <tr><td class="t3">混合 + 公司过滤</td><td class="n t3">5 / 0 / 5 / <b>0</b></td>
+      <td class="n t3">6.00 / 6</td><td class="n t3">7 / 7</td></tr>
+</table>
+<p class="sub" style="margin-top:.8mm">
+  命中均值与首条正确率取单公司题 Q1–Q7（Q8/Q9 无目标公司）。「错」= 给出错误数值；
+  <b>30 格中「错」为 0 —— 全部失败都是拒答，没有一次答错数值。</b>
+</p>
+
+<h2>10 题总表</h2>
+<table>
+  <colgroup>
+    <col style="width:2.6%"><col style="width:8.4%"><col style="width:19%">
+    <col style="width:10.6%"><col style="width:10.6%"><col style="width:11%"><col style="width:37.8%">
+  </colgroup>
+  <tr><th>#</th><th>题型</th><th>问题（简称）</th>
+      <th>只用向量<br>命中·首条·判定</th><th>只用 BM25<br>命中·首条·判定</th>
+      <th>混合+公司过滤<br>命中·首条·判定</th><th>归因（错在哪）</th></tr>
+  <tr><td class="c">1</td><td>单指标</td><td>工商银行 手续费及佣金净收入</td>
+      <td class="c">4/6 · ✓ · <span class="ok">对</span></td>
+      <td class="c">2/6 · ✗ · <span class="ok">对</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="ok">对</span></td>
+      <td>无。BM25 前 4 条是平安/民生/农行，靠第 5、6 条工行块答对，且主动声明「他行数据未予采用」</td></tr>
+  <tr><td class="c">2</td><td>单指标</td><td>建设银行 不良贷款率</td>
+      <td class="c">3/6 · ✓ · <span class="ok">对</span></td>
+      <td class="c">1/6 · ✗ · <span class="ok">对</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="ok">对</span></td>
+      <td>无。向量答对 1.29% 后补了句「全行口径无法回答」，首轮自动判定被误判成拒答（已修正）</td></tr>
+  <tr><td class="c">3</td><td>单指标</td><td>招商银行 净利息收益率</td>
+      <td class="c">6/6 · ✓ · <span class="ok">对</span></td>
+      <td class="c">3/6 · ✓ · <span class="ok">对</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="ok">对</span></td>
+      <td>无。口径扩展把「净息差」接到「净利息收益率」，三路都答出 1.83%</td></tr>
+  <tr><td class="c">4</td><td>藏在附注</td><td>招商银行 信用减值损失</td>
+      <td class="c">6/6 · ✓ · <span class="rj">拒答</span></td>
+      <td class="c">3/6 · ✗ · <span class="ok">对</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="ok">对</span></td>
+      <td>向量召回 6 块招行损失准备明细表，但没有利润表「信用减值损失」行 → 拒答</td></tr>
+  <tr><td class="c">5</td><td>藏在附注</td><td>工商银行 现金流净额 vs 净利润</td>
+      <td class="c">4/6 · ✓ · <span class="rj">拒答</span></td>
+      <td class="c">0/6 · ✗ · <span class="rj">拒答</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="rj">拒答</span></td>
+      <td>混合拿到 6/6 工行块，但<b>净利润数字块一块没进</b>：命中的 p15-16 是表下注释，数字在 p16-18/p18-19</td></tr>
+  <tr><td class="c">6</td><td>长口语</td><td>交通银行 拨备覆盖率</td>
+      <td class="c">1/6 · ✗ · <span class="rj">拒答</span></td>
+      <td class="c">1/6 · ✗ · <span class="rj">拒答</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="rj">拒答</span></td>
+      <td>值 203.80% 在 <span class="k">p10-10</span> 块，三路<b>都没召回它</b>；召回的 p10-12 里连「拨备覆盖率」五个字都没有（详见案例一）</td></tr>
+  <tr><td class="c">7</td><td>一句话多子问题</td><td>农业银行 三指标</td>
+      <td class="c">6/6 · ✓ · <span class="rj">部分对</span></td>
+      <td class="c">0/6 · ✗ · <span class="rj">拒答</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="ok">对</span></td>
+      <td>向量只答出 2 项，第 3 项所在页未进 top-6；BM25 召回的 6 块<b>无一块农行</b>（详见案例三）</td></tr>
+  <tr><td class="c">8</td><td>跨公司全景</td><td>哪几家银行营收增速最高</td>
+      <td class="c dim">— · — · 拒答</td><td class="c dim">— · — · 拒答</td>
+      <td class="c dim t3">— · — · 拒答</td>
+      <td>结构性问题：单次 top-6 只能覆盖 1~2 家，拿不到 12 家的营收增速。三路均正确拒答</td></tr>
+  <tr><td class="c">9</td><td>跨公司全景</td><td>哪些银行拨备覆盖率上升</td>
+      <td class="c dim">— · — · 拒答</td><td class="c dim">— · — · 拒答</td>
+      <td class="c dim t3">— · — · 拒答</td>
+      <td>同 Q8，且更深一层：<b>建行/兴业的 2025 年末拨备覆盖率在语料里本就不存在</b>，多轮检索也补不齐</td></tr>
+  <tr><td class="c">10</td><td>边界/抗幻觉</td><td>招商银行 2025 全年净利润</td>
+      <td class="c">6/6 · ✓ · <span class="rj">拒答</span></td>
+      <td class="c">4/6 · ✓ · <span class="rj">拒答</span></td>
+      <td class="c t3">6/6 · ✓ · <span class="rj">拒答</span></td>
+      <td>三路均拒答，但<b>语料里其实有答案</b>（公司治理 p72，本公司口径 1,361.84 亿元），BM25 排到首条仍拒答（详见案例二）</td></tr>
+</table>
+
+<h2>三个案例</h2>
+<p class="case"><span class="hd">案例一 · Q6 交通银行拨备覆盖率｜三路全拒，根因在第二步的表格重建。</span>
+  值 203.80% 在 <span class="k">p10-10</span> 块，<b>三路都没有召回它</b>；被召回的 <span class="k">p10-12</span> 块里连「拨备覆盖率」五个字都没有。
+  看 <span class="k">p10-10</span> 那一行的形态就知道为什么：
+  <span class="k">拨备覆盖率 | | | | | | | | | | | 203.80</span> —— 指标名与值之间隔着 <b>11 个空单元格</b>，
+  是第二步坐标法重建表格时展开合并单元格的产物。后果有两层：BM25 侧该块大半 token 就是「|」，
+  词邻近性信号被稀释光；向量侧编码器看到的是一串<b>孤立数字</b>而非一张拨备覆盖率表。
+  模型的拒答理由（「6 段材料均无该指标」）完全属实 —— 这是<b>漏检，不是幻觉</b>。
+  对照：同一题混合+过滤召回 6/6 交行且首条正确，说明<b>公司过滤这一层工作正常</b>，
+  出问题的是进入融合之前的语料形态；而向量/BM25 的首条分别是<b>浦发银行 p54-55 的同名指标表</b>，
+  正是公司过滤要治的那类错。</p>
+
+<p class="case"><span class="hd">案例二 · Q10 边界题｜抗幻觉约束把一道「其实有答案」的题也拒了，且出题时 GT 标错。</span>
+  出题假设「语料只有 2026H1」，于是把 GT 设为空、把拒答当正确。实测语料里<b>有</b>：
+  招行公司治理 p72「按照经审计的<b>本公司 2025 年度净利润 1,361.84 亿元</b>的 10% 提取法定盈余公积 136.18 亿元」。
+  更关键的是 BM25 恰好把该块排到<b>首条</b>，模型看了它，仍然拒答，理由是「该数字用于说明利润分配方案，
+  未明确为全年净利润口径」。这是个双面案例：好的一面是抗幻觉很稳 —— 它没有把 2026H1 的集团数 769.19 亿
+  当成 2025 全年度数，也没有编数；代价是<b>严格拒答吃掉了召回率</b>。而真正该记的是标注错误：
+  <b>「语料时段外的问题」和「语料里没有的数」不是一回事</b> —— 半年报必然含上年分配基数这类跨期数字。
+  口径风险也真实存在：1,361.84 亿是<b>本公司</b>口径，与集团口径不可比。</p>
+
+<p class="case"><span class="hd">案例三 · Q7 一句话三子问题｜三路差距最大的一题（0/3 → 2/3 → 3/3）。</span>
+  只用 BM25 召回的 6 块是招商/民生/中信/平安/中行，<b>一块农业银行都没有</b>，它没有乱答
+  （输出了他行真实数据并声明「材料中没有农业银行」），但完全没用；只用向量 6/6 全是农行，
+  却只答出净利息收入 3,122.44 亿和不良率 1.25%，第 3 项拨备覆盖率所在页没进 top-6；
+  混合+公司过滤三项全对（3,122.44 / 1.25 / 290.10），并<b>主动排掉两个陷阱</b>：
+  「不良贷款率 1.05%、拨备覆盖率 350.76% 是<b>县域金融分部</b>口径，不是全行」、
+  「贷款拨备率 3.63 ≠ 拨备覆盖率」。<b>多子问题不是靠更强的模型解决的，是靠检索把三页都召回。</b></p>
+
+<h2>关键结论</h2>
+<ol class="lc">
+  <li><b>修好「串公司」的是公司过滤，不是 RRF。</b>单公司题 top-6 命中均值：混合+过滤 6.00，
+      无过滤量级 3/6~4/6；RRF 单独上甚至<b>比只用向量更差</b>（Q1 首条落到平安银行 p47）。
+      RRF 只看名次，会抬高「两路都中等」的块，压过「单路最好」的块。</li>
+  <li><b>「找对公司」已解决（首条正确率 7/7），「找对页」仍靠运气。</b>
+      17 次拒答里有 5 次（Q5、Q6）是混合<b>已经拿到 6/6 目标公司块却仍答不出</b> ——
+      因为承载数值的那一页没被召回。要提分该动块粒度，不是继续调 RRF 的 K 或换更大的向量模型。</li>
+  <li><b>表格重建的副产品会同时废掉 BM25 和向量。</b>指标名与值隔 11 个空单元格（Q6）、
+      标签块与数字块分离（建行 p8-10 只有标签、p7-8 只有 30 多个数字零标签），
+      两种形态同时打击词邻近性与语义编码，而症状表现为「模型拒答」，很容易误判成模型能力问题。</li>
+  <li><b>跨公司全景题（Q8/Q9）单次检索结构上无法回答。</b>top-6 覆盖不了 12 家 × 两期；
+      Q9 还更深一层 —— 建行/兴业的 2025 年末值在语料里已被表格切分丢失，多轮检索也补不齐，
+      必须先修数据再接多轮。</li>
+</ol>
+
+<div class="one">
+  <div class="lbl">一句话结论（可直接填入提交文本框）</div>
+  <p>指名公司、指标明确的单点题适合建库检索（混合 + 公司过滤可稳定命中）；跨公司比较、跨期对比、表格密集的数值题不适合单次检索，需要多轮检索 / 图谱或微调。</p>
+</div>
+
+<footer>
+  <span>https://github.com/HYyuann/bank-report-rag</span>
+  <span>生成日期：2026-09-29　|　数据来源：eval_raw.json（10 题 × 3 配置实测）</span>
+</footer>
+
+</body>
+</html>
