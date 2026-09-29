@@ -1,9 +1,64 @@
 {
-  "generated_at": "2026-09-29T13:57:30+08:00",
+  "generated_at": "2026-09-29T14:10:31+08:00",
   "report_period": "2026-06-30",
   "source": "巨潮资讯网 (cninfo.com.cn)",
-  "count": 2,
+  "count": 12,
   "reports": [
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "title": "工商银行2026半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225526043.PDF",
+      "filename": "601398_工商银行_2026H1.pdf",
+      "size_bytes": 5984342,
+      "pages": 272,
+      "downloaded_at": "2026-09-29T14:09:44+08:00"
+    },
+    {
+      "code": "601939",
+      "name": "建设银行",
+      "title": "建设银行2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225531678.PDF",
+      "filename": "601939_建设银行_2026H1.pdf",
+      "size_bytes": 5070626,
+      "pages": 331,
+      "downloaded_at": "2026-09-29T14:09:49+08:00"
+    },
+    {
+      "code": "601288",
+      "name": "农业银行",
+      "title": "农业银行2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225527334.PDF",
+      "filename": "601288_农业银行_2026H1.pdf",
+      "size_bytes": 3244588,
+      "pages": 284,
+      "downloaded_at": "2026-09-29T14:09:54+08:00"
+    },
+    {
+      "code": "601988",
+      "name": "中国银行",
+      "title": "中国银行股份有限公司2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225526341.PDF",
+      "filename": "601988_中国银行_2026H1.pdf",
+      "size_bytes": 6122714,
+      "pages": 183,
+      "downloaded_at": "2026-09-29T14:09:59+08:00"
+    },
+    {
+      "code": "601328",
+      "name": "交通银行",
+      "title": "交通银行2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225530238.PDF",
+      "filename": "601328_交通银行_2026H1.pdf",
+      "size_bytes": 4084423,
+      "pages": 271,
+      "downloaded_at": "2026-09-29T14:10:03+08:00"
+    },
     {
       "code": "600036",
       "name": "招商银行",
@@ -13,7 +68,62 @@
       "filename": "600036_招商银行_2026H1.pdf",
       "size_bytes": 2581545,
       "pages": 246,
-      "downloaded_at": "2026-09-29T13:57:25+08:00"
+      "downloaded_at": "2026-09-29T14:10:05+08:00"
+    },
+    {
+      "code": "601166",
+      "name": "兴业银行",
+      "title": "兴业银行2026年半年度报告",
+      "announce_date": "2026-08-28",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-28/1225518025.PDF",
+      "filename": "601166_兴业银行_2026H1.pdf",
+      "size_bytes": 5746253,
+      "pages": 272,
+      "downloaded_at": "2026-09-29T14:10:10+08:00"
+    },
+    {
+      "code": "600000",
+      "name": "浦发银行",
+      "title": "上海浦东发展银行股份有限公司2026年半年度报告",
+      "announce_date": "2026-08-28",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-28/1225521898.PDF",
+      "filename": "600000_浦发银行_2026H1.pdf",
+      "size_bytes": 4553498,
+      "pages": 330,
+      "downloaded_at": "2026-09-29T14:10:14+08:00"
+    },
+    {
+      "code": "601998",
+      "name": "中信银行",
+      "title": "中信银行股份有限公司2026年半年度报告",
+      "announce_date": "2026-08-27",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-27/1225512631.PDF",
+      "filename": "601998_中信银行_2026H1.pdf",
+      "size_bytes": 4658404,
+      "pages": 346,
+      "downloaded_at": "2026-09-29T14:10:20+08:00"
+    },
+    {
+      "code": "600016",
+      "name": "民生银行",
+      "title": "中国民生银行2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225530114.PDF",
+      "filename": "600016_民生银行_2026H1.pdf",
+      "size_bytes": 3401211,
+      "pages": 285,
+      "downloaded_at": "2026-09-29T14:10:25+08:00"
+    },
+    {
+      "code": "601818",
+      "name": "光大银行",
+      "title": "中国光大银行股份有限公司2026年半年度报告",
+      "announce_date": "2026-08-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-08-29/1225528526.PDF",
+      "filename": "601818_光大银行_2026H1.pdf",
+      "size_bytes": 2658478,
+      "pages": 248,
+      "downloaded_at": "2026-09-29T14:10:29+08:00"
     },
     {
       "code": "000001",
@@ -24,7 +134,7 @@
       "filename": "000001_平安银行_2026H1.pdf",
       "size_bytes": 1472390,
       "pages": 221,
-      "downloaded_at": "2026-09-29T13:57:30+08:00"
+      "downloaded_at": "2026-09-29T14:10:31+08:00"
     }
   ]
 }
