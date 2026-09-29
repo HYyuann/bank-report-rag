@@ -893,7 +893,22 @@ def write_report(results: list[dict], elapsed: float) -> None:
     else:
         L.append("12 份全部与 manifest 记录一致，无缺页。")
     L.append("")
-    L.append(f"\n_总耗时 {elapsed:.0f} 秒_\n")
+
+    L.append("## 六、已知局限\n")
+    L.append("1. **农行的表格标记不完整**：农行表格多无框线，pdfplumber 只识别出 9 张，"
+             "has_table 标记覆盖 10/193；内容通过正文通道保留，"
+             "但按 has_table 过滤会漏。农行的表格类问题在检索评测中需单独观察。")
+    L.append("2. **少数坐标重建的表仍有列错位**：883 张表中 370 张走坐标重建，多数可用，"
+             "但跨页 / 合并单元格的复杂表重建后会出现数字与标签错行"
+             "（实例：工行递延所得税变动表，块 `601398_0123`）。")
+    L.append("")
+
+    # 增量重跑时本次 elapsed≈0（全部命中 extract/ 缓存），逐份耗时之和才是有意义的数字
+    secs = sum(r.get("seconds", 0) for r in results)
+    if secs:
+        L.append(f"\n_提取耗时合计 {secs:.0f} 秒（12 份逐份之和；命中缓存的份沿用上次记录）_\n")
+    else:
+        L.append(f"\n_总耗时 {elapsed:.0f} 秒_\n")
 
     atomic_write_text(REPORT_PATH, "\n".join(L))
 
