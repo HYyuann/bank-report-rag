@@ -28,6 +28,5 @@ __pycache__/
 # 探测/调试留下的临时文件
 probe_*
 org_*.json
-extract_run.log
-build_index.log
+*.log
 sample_chunks.md

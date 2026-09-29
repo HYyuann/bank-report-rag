@@ -204,6 +204,9 @@ def main() -> int:
     ap.add_argument("--block", type=int, default=200,
                     help="每编多少块落一次断点；断掉重启会从这里接着编")
     ap.add_argument("--model", default=MODEL_NAME)
+    ap.add_argument("--tokens-only", action="store_true",
+                    help="只按当前 jieba_userdict.txt 重写 BM25 分词载荷，不重算向量"
+                         "（改了自定义词典就得跑一次）")
     args = ap.parse_args()
 
     chunks = load_chunks(args.limit)
@@ -222,6 +225,17 @@ def main() -> int:
     n_tok = sum(len(t) for t in token_lists)
     log(f"      词典加载 + 分词完毕，共 {n_tok:,} 词，平均 {n_tok / len(chunks):.0f} 词/块"
         f"（{time.time() - t0:.1f}s）")
+
+    if args.tokens_only:
+        # 只重建 BM25 载荷。改 jieba_userdict.txt 后必须走这一步：文档侧的分词结果
+        # 是建索引时固化在 bm25_tokens.jsonl 里的，只改词典不重建，查询侧切出来的
+        # 新词在文档侧根本没有对应 token，BM25 反而更匹配不上。
+        atomic_write_text(TOKENS_PATH, "\n".join(
+            json.dumps({"chunk_id": c["chunk_id"], "tokens": t}, ensure_ascii=False)
+            for c, t in zip(chunks, token_lists)) + "\n")
+        log(f"      --tokens-only：只重写 bm25_tokens.jsonl（{len(chunks)} 行，"
+            f"{TOKENS_PATH.stat().st_size / 1e6:.1f} MB），向量未动")
+        return 0
 
     # ── 向量：编码 ───────────────────────────────────────────────────
     log(f"\n[2/3] 编码 {len(chunks)} 块 · {args.model}（CPU）…")

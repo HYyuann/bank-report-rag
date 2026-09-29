@@ -1,0 +1,7 @@
+# 开发/交付辅助依赖，运行时不需要。别人 clone 后只装 requirements.txt 即可跑通全流程。
+#   pip install -r requirements-dev.txt
+#
+# playwright 只被 shot.py 用来给 Streamlit 页面拍截图（交作业用）。
+# 注意：装完还得有浏览器内核。本项目直接用本机已装的 Edge（channel="msedge"），
+# 没有再下 chromium——`python -m playwright install chromium` 走镜像也卡在 0%。
+playwright>=1.40

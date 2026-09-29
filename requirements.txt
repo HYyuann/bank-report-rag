@@ -10,7 +10,13 @@ pdfplumber>=0.11     # 表格提取：优先走它，丢列时回退坐标重建
 tiktoken>=0.7        # 切块按 cl100k_base 数 token（中文约 1.13 token/字符）
 
 # 第三步（检索索引：向量 + BM25）
-sentence-transformers>=3.0   # Qwen/Qwen3-Embedding-0.6B，纯 CPU 推理
+sentence-transformers>=3.0   # 实际用 BAAI/bge-small-zh-v1.5，纯 CPU 推理（选型理由见 README）
 numpy>=1.26                  # 2553 块直接暴力算余弦，不装 faiss
 jieba>=0.42                  # BM25 分词，自定义词典见 jieba_userdict.txt
 rank-bm25>=0.2.2             # BM25Okapi
+
+# 第四步（混合检索 + 问答页面）
+streamlit>=1.40              # app.py 页面；答案生成走 DeepSeek HTTP 接口，不额外装 SDK
+
+# 截图用的 playwright 在 requirements-dev.txt：它只服务于 shot.py，
+# 放主依赖里会让别人 clone 后被迫下一份 chromium。
