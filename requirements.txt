@@ -8,3 +8,9 @@ zhconv>=1.4
 pymupdf>=1.24        # 正文提取：对 xref 损坏的 PDF 容错更好（建行/农行/交行）
 pdfplumber>=0.11     # 表格提取：优先走它，丢列时回退坐标重建
 tiktoken>=0.7        # 切块按 cl100k_base 数 token（中文约 1.13 token/字符）
+
+# 第三步（检索索引：向量 + BM25）
+sentence-transformers>=3.0   # Qwen/Qwen3-Embedding-0.6B，纯 CPU 推理
+numpy>=1.26                  # 2553 块直接暴力算余弦，不装 faiss
+jieba>=0.42                  # BM25 分词，自定义词典见 jieba_userdict.txt
+rank-bm25>=0.2.2             # BM25Okapi

@@ -8,7 +8,11 @@ files/
 *.part
 extract/
 chunks.jsonl
+index/
 *.tmp
+
+# 第三步：Qwen3-Embedding 权重缓存（1.2GB，走 hf-mirror 重新下载即可）
+.hf_cache/
 
 # 注意：extraction_report.md 是结论页素材，必须提交，不要加进来
 
@@ -25,4 +29,5 @@ __pycache__/
 probe_*
 org_*.json
 extract_run.log
+build_index.log
 sample_chunks.md
