@@ -1,0 +1,2957 @@
+[
+ {
+  "id": 1,
+  "type": "单指标",
+  "question": "工商银行 2026 年上半年手续费及佣金净收入是多少、同比变化如何？",
+  "target": "601398",
+  "gt": [
+   "692.35",
+   "3.3"
+  ],
+  "note": "干扰项：手续费及佣金**收入** 765.91 亿",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 23,
+      "pe": 25,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 212,
+      "pe": 213,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 120,
+      "pe": 121,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 28,
+      "pe": 29,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "管理层讨论与分析",
+      "ps": 14,
+      "pe": 15,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 4,
+    "top1_ok": true,
+    "expansion": [
+     "手续费及佣金收入",
+     "中间业务收入"
+    ],
+    "answer": "工商银行2026年上半年手续费及佣金净收入为692.35亿元，较2025年同期的670.20亿元增加22.15亿元（该增减额由材料数字相减得出，材料未直接给出同比增减额或增幅）。\n\n- 工商银行2026年上半年手续费及佣金净收入692.35亿元，2025年同期670.20亿元（工商银行 · 财务报表附注 · p120-121）。\n- 同期手续费及佣金收入765.91亿元，同比增加24.29亿元，增长3.3%（工商银行 · 财务报告 · p23-25）。\n\n说明：材料中工商银行披露的「手续费及佣金净收入」为692.35亿元（附注口径），而「手续费及佣金收入」为765.91亿元（财务报告口径），两者口径不同，请勿混用。材料未直接给出净收入的同比增减额或增长率，故未作换算。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "692.35",
+     "3.3"
+    ],
+    "seconds": 1.5
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 23,
+      "pe": 24,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600016",
+      "name": "民生银行",
+      "section": "管理层讨论与分析",
+      "ps": 50,
+      "pe": 51,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 20,
+      "pe": 21,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600016",
+      "name": "民生银行",
+      "section": "财务报表附注",
+      "ps": 194,
+      "pe": 196,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 23,
+      "pe": 25,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 22,
+      "pe": 23,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 2,
+    "top1_ok": false,
+    "expansion": [
+     "手续费及佣金收入",
+     "中间业务收入"
+    ],
+    "answer": "工商银行 2026 年上半年手续费及佣金净收入为 692.35 亿元，同比增加 22.15 亿元，增长 3.3%。\n\n- 手续费及佣金净收入 692.35 亿元，同比增加 22.15 亿元，增长 3.3%（工商银行 · 财务报告 · p22-23）。\n- 同期手续费及佣金收入 765.91 亿元，同比增加 24.29 亿元，增长 3.3%；手续费及佣金支出 73.56 亿元（工商银行 · 财务报告 · p22-23）。\n\n注：材料中另有农业银行、民生银行、平安银行的相关数据，均非工商银行口径，未予采用。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "692.35",
+     "3.3"
+    ],
+    "seconds": 1.5
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 23,
+      "pe": 25,
+      "vec_rank": 1,
+      "bm_rank": 1,
+      "rrf": 0.03279,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 4,
+      "bm_rank": 7,
+      "rrf": 0.03055,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 212,
+      "pe": 213,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 22,
+      "pe": 23,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 120,
+      "pe": 121,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 207,
+      "pe": 208,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "company"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "手续费及佣金收入",
+     "中间业务收入"
+    ],
+    "answer": "工商银行2026年上半年手续费及佣金净收入为692.35亿元，同比增加22.15亿元，增长3.3%（工商银行 · 财务报告 · p22-23）。\n\n补充口径：同期手续费及佣金收入为765.91亿元，同比增加24.29亿元，增长3.3%（工商银行 · 财务报告 · p23-25）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "692.35",
+     "3.3"
+    ],
+    "seconds": 1.6
+   }
+  }
+ },
+ {
+  "id": 2,
+  "type": "单指标",
+  "question": "建设银行 2026 年上半年不良贷款率是多少？",
+  "target": "601939",
+  "gt": [
+   "1.29"
+  ],
+  "note": "p34 有「民营企业贷款不良率 1.46%」干扰",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 51,
+      "pe": 51,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 50,
+      "pe": 51,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 51,
+      "pe": 52,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600016",
+      "name": "民生银行",
+      "section": "管理层讨论与分析",
+      "ps": 39,
+      "pe": 40,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 70,
+      "pe": 71,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600016",
+      "name": "民生银行",
+      "section": "管理层讨论与分析",
+      "ps": 39,
+      "pe": 39,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 3,
+    "top1_ok": true,
+    "expansion": [
+     "不良率",
+     "不良贷款比率"
+    ],
+    "answer": "建设银行 2026 年上半年（2026 年 6 月 30 日）不含息贷款和垫款总额的不良贷款率为 1.29%（建设银行 · 管理层讨论与分析 · p50-51）。\n\n补充说明：材料中建设银行披露的是「不含息贷款和垫款总额」口径的不良贷款率 1.29%，未出现全行整体「不良贷款率」的单独表述；若需全行口径的不良贷款率，检索到的材料无法回答。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [
+     "1.29"
+    ],
+    "seconds": 1.8
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 63,
+      "pe": 65,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600000",
+      "name": "浦发银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 8,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 47,
+      "pe": 48,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 32,
+      "pe": 33,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 64,
+      "pe": 66,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 49,
+      "pe": 50,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 1,
+    "top1_ok": false,
+    "expansion": [
+     "不良率",
+     "不良贷款比率"
+    ],
+    "answer": "建设银行 2026 年上半年不良贷款率为 1.29%（建设银行 · 管理层讨论与分析 · p49-50）。\n\n材料中该处同时列示：2026 年 6 月 30 日不良贷款额 378,976 百万元，不良贷款率 1.29%；2025 年 12 月 31 日不良贷款率 1.31%（建设银行 · 管理层讨论与分析 · p49-50）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "1.29"
+    ],
+    "seconds": 1.3
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 49,
+      "pe": 50,
+      "vec_rank": 4,
+      "bm_rank": 1,
+      "rrf": 0.03202,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 10,
+      "vec_rank": 10,
+      "bm_rank": 2,
+      "rrf": 0.03041,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 51,
+      "pe": 51,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 50,
+      "pe": 51,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 51,
+      "pe": 52,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 57,
+      "pe": 58,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "company"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "不良率",
+     "不良贷款比率"
+    ],
+    "answer": "建设银行2026年上半年（2026年6月30日）不良贷款率为1.29%。（建设银行 · 管理层讨论与分析 · p49-50）",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "1.29"
+    ],
+    "seconds": 0.7
+   }
+  }
+ },
+ {
+  "id": 3,
+  "type": "单指标",
+  "question": "招商银行 2026 年上半年净利息收益率是多少？",
+  "target": "600036",
+  "gt": [
+   "1.83"
+  ],
+  "note": "另有本公司口径 1.87%（p15）",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 12,
+      "pe": 13,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 7,
+      "pe": 8,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 13,
+      "pe": 14,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 15,
+      "pe": 15,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "净息差",
+     "净利差"
+    ],
+    "answer": "招商银行2026年上半年净利息收益率为1.83%（招商银行 · 管理层讨论与分析 · p15；招商银行 · 公司简介与主要财务指标 · p8-9）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "1.83"
+    ],
+    "seconds": 1.1
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 13,
+      "pe": 15,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 13,
+      "pe": 15,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601998",
+      "name": "中信银行",
+      "section": "财务报告",
+      "ps": 16,
+      "pe": 17,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 15,
+      "pe": 15,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 3,
+    "top1_ok": true,
+    "expansion": [
+     "净息差",
+     "净利差"
+    ],
+    "answer": "招商银行2026年上半年净利息收益率为1.83%（招商银行 · 公司简介与主要财务指标 · p8-9；招商银行 · 管理层讨论与分析 · p15）。\n\n补充说明：该行同期净利差为1.77%（招商银行 · 管理层讨论与分析 · p15）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "1.83"
+    ],
+    "seconds": 0.8
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": 1,
+      "bm_rank": 1,
+      "rrf": 0.03279,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 2,
+      "bm_rank": 2,
+      "rrf": 0.03226,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 15,
+      "pe": 15,
+      "vec_rank": 6,
+      "bm_rank": 3,
+      "rrf": 0.03102,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 12,
+      "pe": 13,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 7,
+      "pe": 8,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 38,
+      "pe": 38,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "company"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "净息差",
+     "净利差"
+    ],
+    "answer": "招商银行2026年上半年净利息收益率为1.83%（招商银行 · 公司简介与主要财务指标 · p8-9）。\n\n补充说明：材料中另有管理层讨论与分析章节披露，报告期内本集团净利息收益率为1.83%，本公司为1.87%（招商银行 · 管理层讨论与分析 · p38）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "1.83"
+    ],
+    "seconds": 0.9
+   }
+  }
+ },
+ {
+  "id": 4,
+  "type": "藏在附注",
+  "question": "招商银行 2026 年上半年信用减值损失是多少？",
+  "target": "600036",
+  "gt": [
+   "291.77",
+   "29,177"
+  ],
+  "note": "主要指标表只写「信用减值损失/贷款均值」，数值在利润表",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 121,
+      "pe": 123,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 184,
+      "pe": 185,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 105,
+      "pe": 106,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 147,
+      "pe": 149,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 123,
+      "pe": 125,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 183,
+      "pe": 184,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "检索到的材料无法回答。\n\n材料中只包含招商银行以摊余成本计量的债务工具投资损失准备变动、贷款和垫款损失准备、递延所得税等明细数据，没有出现「信用减值损失」这一利润表项目的合计数或本期计提总额。要回答该问题，还需要招商银行2026年半年度报告中利润表「信用减值损失」项目的金额（或资产损失准备表中对应「信用减值损失」的合计计提数）。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.0
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 18,
+      "pe": 20,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 17,
+      "pe": 18,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 21,
+      "pe": 23,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 23,
+      "pe": 25,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 9,
+      "pe": 11,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 3,
+    "top1_ok": false,
+    "expansion": [],
+    "answer": "招商银行2026年上半年信用减值损失为291.77亿元（招商银行 · 管理层讨论与分析 · p17-18）。\n\n材料中同时给出：报告期本集团信用减值损失291.77亿元，同比增长18.49%；信用减值损失合计29,177百万元（2026年1-6月）（招商银行 · 管理层讨论与分析 · p17-18）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "291.77",
+     "29,177"
+    ],
+    "seconds": 0.8
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": 7,
+      "bm_rank": 6,
+      "rrf": 0.03008,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 121,
+      "pe": 123,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 17,
+      "pe": 18,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 184,
+      "pe": 185,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 9,
+      "pe": 11,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 105,
+      "pe": 106,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "招商银行2026年上半年信用减值损失合计为291.77亿元（招商银行 · 管理层讨论与分析 · p17-18）。\n\n其中主要构成为：贷款和垫款254.63亿元、金融投资-6.10亿元、应收同业和其他金融机构款项7.97亿元、表外项目37.08亿元、其他-1.81亿元（招商银行 · 管理层讨论与分析 · p17-18）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "291.77"
+    ],
+    "seconds": 1.1
+   }
+  }
+ },
+ {
+  "id": 5,
+  "type": "藏在附注",
+  "question": "工商银行 2026 年上半年经营活动产生的现金流量净额与净利润相比差多少、主要差异来自哪些项目？",
+  "target": "601398",
+  "gt": [
+   "13,690.13",
+   "1,369,013",
+   "1,764.75"
+  ],
+  "note": "需跨「主要指标」与现金流量表附注",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 33,
+      "pe": 34,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 128,
+      "pe": 129,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 30,
+      "pe": 31,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 23,
+      "pe": 25,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600000",
+      "name": "浦发银行",
+      "section": "管理层讨论与分析",
+      "ps": 47,
+      "pe": 48,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 4,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "检索到的材料无法回答该问题。\n\n原因：材料中虽有工商银行经营活动产生的现金流量净额（1,369,013百万元，即13,690.13亿元）及其变动原因说明，但**没有给出工商银行2026年上半年的净利润金额**，因此无法计算两者之间的差额，也无法说明差异来自哪些项目。\n\n（工商银行 · 财务报告 · p33-34）仅说明经营活动现金净流入13,690.13亿元，同比增加5,826.96亿元，主要是卖出回购款项净增额增加及客户贷款及垫款净增额减少所致；材料中未出现工商银行同期净利润数字。\n\n（工商银行 · 财务报表附注 · p128-129）仅列示经营活动现金流出小计(2,744,076)百万元、经营活动产生的现金流量净额1,369,013百万元，未列示净利润。\n\n（工商银行 · 财务报告 · p23-25）仅列示所得税费用335.35亿元、实际税率15.97%，未列示净利润。\n\n（工商银行 · 公司简介与主要财务指标 · p15-16）仅给出净利润相关指标的计算口径说明，未给出净利润金额。\n\n（工商银行 · 财务报告 · p33-34）中出现的“归属于母公司股东的净利润”仅说明境内外会计准则下无差异，未给出具体数字。\n\n还缺：工商银行2026年上半年合并利润表中的净利润（或归属于母公司股东的净利润）金额，以及现金流量表补充资料中“将净利润调节为经营活动现金流量”的各项调节项目。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [
+     "13,690.13",
+     "1,369,013"
+    ],
+    "seconds": 2.0
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 12,
+      "pe": 13,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "财务报表附注",
+      "ps": 221,
+      "pe": 223,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 30,
+      "pe": 31,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 31,
+      "pe": 33,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "财务报告",
+      "ps": 181,
+      "pe": 183,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 0,
+    "top1_ok": false,
+    "expansion": [],
+    "answer": "检索到的材料无法回答。\n\n材料中没有任何一段来自工商银行，也没有工商银行 2026 年上半年经营活动产生的现金流量净额、净利润及其差异构成项目的数据。现有材料分别来自平安银行、交通银行、农业银行、中国银行，与工商银行无关，不能替代或推算工商银行的数据。\n\n要回答该问题，还需要补充：工商银行 2026 年半年度报告中「经营活动产生的现金流量净额」「净利润」的具体金额，以及现金流量表补充资料（将净利润调节为经营活动现金流量）中各调节项目的明细。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.1
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 2,
+      "bm_rank": 6,
+      "rrf": 0.03128,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 33,
+      "pe": 34,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 270,
+      "pe": 272,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 65,
+      "pe": 67,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 128,
+      "pe": 129,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报表附注",
+      "ps": 178,
+      "pe": 179,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "company"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "检索到的材料无法回答该问题。\n\n原因：材料中虽有工商银行 2026 年上半年经营活动产生的现金流量净额 1,369,013 百万元（即 13,690.13 亿元）（工商银行 · 财务报告 · p33-34），但材料中未给出工商银行 2026 年上半年**净利润**的金额，因此无法计算两者之差，也无法说明差异来自哪些项目。\n\n还缺的材料：工商银行 2026 年半年度合并利润表中「净利润」项目的金额（或归属于母公司股东的净利润及其少数股东损益），以及现金流量表补充资料中「将净利润调节为经营活动现金流量」的调节明细。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [
+     "13,690.13",
+     "1,369,013"
+    ],
+    "seconds": 1.3
+   }
+  }
+ },
+ {
+  "id": 6,
+  "type": "长口语",
+  "question": "我最近在挑银行股，先翻了平安和兴业的报告，感觉息差都在往下走，又看了几家大行的资本充足率，反正就想弄清楚一件事：交通银行 2026 年上半年末的拨备覆盖率是多少？",
+  "target": "601328",
+  "gt": [
+   "203.80"
+  ],
+  "note": "铺垫里出现平安/兴业，看会不会被带跑",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "600000",
+      "name": "浦发银行",
+      "section": "管理层讨论与分析",
+      "ps": 54,
+      "pe": 55,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601166",
+      "name": "兴业银行",
+      "section": "环境、社会与治理",
+      "ps": 84,
+      "pe": 86,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 34,
+      "pe": 35,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 47,
+      "pe": 47,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601166",
+      "name": "兴业银行",
+      "section": "管理层讨论与分析",
+      "ps": 29,
+      "pe": 31,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 1,
+    "top1_ok": false,
+    "expansion": [
+     "贷款拨备覆盖率",
+     "拨备率",
+     "资本充足水平"
+    ],
+    "answer": "检索到的材料无法回答。\n\n材料中关于交通银行的内容（交通银行 · 管理层讨论与分析 · p34-35）只披露了资产总额、客户贷款构成等数据，没有出现拨备覆盖率或贷款拨备率的数值。其余材料分别来自浦发银行、兴业银行、平安银行，均非交通银行数据，不能用于回答交通银行的问题。\n\n要回答该问题，还需要交通银行 2026 年半年度报告中披露拨备覆盖率（或贷款拨备率）的章节及页码。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.4
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "600000",
+      "name": "浦发银行",
+      "section": "管理层讨论与分析",
+      "ps": 65,
+      "pe": 65,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 48,
+      "pe": 49,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600016",
+      "name": "民生银行",
+      "section": "重要提示与释义",
+      "ps": 86,
+      "pe": 89,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601818",
+      "name": "光大银行",
+      "section": "公司治理",
+      "ps": 17,
+      "pe": 18,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 40,
+      "pe": 41,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 14,
+      "pe": 15,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 1,
+    "top1_ok": false,
+    "expansion": [
+     "贷款拨备覆盖率",
+     "拨备率",
+     "资本充足水平"
+    ],
+    "answer": "检索到的材料无法回答。\n\n材料[6]来自交通银行，但内容为上海市分行、公司金融业务、科技金融服务等，未披露拨备覆盖率或贷款拨备覆盖率数据；其余材料分别来自浦发银行、平安银行、民生银行、光大银行、招商银行，均非交通银行数据，不能用于回答交通银行的口径。\n\n还缺：交通银行2026年半年度报告中披露拨备覆盖率（或贷款拨备覆盖率）的章节及页码。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.2
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 50,
+      "pe": 52,
+      "vec_rank": 6,
+      "bm_rank": 4,
+      "rrf": 0.03078,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 34,
+      "pe": 35,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 14,
+      "pe": 15,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 10,
+      "pe": 12,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "股份变动及股东情况",
+      "ps": 57,
+      "pe": 59,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "财务报表附注",
+      "ps": 232,
+      "pe": 234,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "贷款拨备覆盖率",
+     "拨备率",
+     "资本充足水平"
+    ],
+    "answer": "检索到的材料无法回答。\n\n材料中未披露交通银行 2026 年上半年末的拨备覆盖率（或贷款拨备覆盖率、拨备率）数值。现有 6 段材料涉及资本融资管理、资产与贷款结构、公司金融业务、主要财务指标、优先股与股东情况、预期信用损失与最大信用风险敞口，均无该指标。还缺的是交通银行 2026 年半年度报告中「资产质量」部分披露的拨备覆盖率数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.3
+   }
+  }
+ },
+ {
+  "id": 7,
+  "type": "一句话多子问题",
+  "question": "我想一次问清三件事：农业银行 2026 年上半年的净利息收入、不良贷款率、拨备覆盖率分别是多少？",
+  "target": "601288",
+  "gt": [
+   "3,122.44",
+   "1.25",
+   "290.10"
+  ],
+  "note": "三个指标、三个不同页",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 18,
+      "pe": 20,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 16,
+      "pe": 17,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报表附注",
+      "ps": 153,
+      "pe": 156,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报表附注",
+      "ps": 189,
+      "pe": 193,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报表附注",
+      "ps": 174,
+      "pe": 175,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "不良率",
+     "不良贷款比率",
+     "贷款拨备覆盖率",
+     "拨备率"
+    ],
+    "answer": "检索到的材料只能回答其中两项，第三项无法回答：\n\n1. **净利息收入**：农业银行 2026 年上半年实现利息净收入 **3,122.44 亿元**（农业银行 · 财务报告 · p16-17）。\n2. **不良贷款率**：农业银行不良贷款率 **1.25%**，较上年末下降 2BP（农业银行 · 公司简介与主要财务指标 · p11-12）。\n3. **拨备覆盖率**：检索到的材料无法回答。材料中只出现了「贷款拨备率 3.63」（农业银行 · 公司简介与主要财务指标 · p11-12），这是贷款减值准备余额除以发放贷款和垫款总额的口径，并非拨备覆盖率（贷款减值准备余额除以不良贷款余额）；材料中未披露农业银行 2026 年 6 月末的拨备覆盖率数值，缺少该项数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [
+     "3,122.44",
+     "1.25"
+    ],
+    "seconds": 1.1
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600016",
+      "name": "民生银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601998",
+      "name": "中信银行",
+      "section": "财务报表附注",
+      "ps": 33,
+      "pe": 34,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "管理层讨论与分析",
+      "ps": 47,
+      "pe": 48,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 0,
+    "top1_ok": false,
+    "expansion": [
+     "不良率",
+     "不良贷款比率",
+     "贷款拨备覆盖率",
+     "拨备率"
+    ],
+    "answer": "检索到的材料无法回答。材料中没有农业银行 2026 年半年度报告的任何数据，因此无法给出农业银行 2026 年上半年的净利息收入、不良贷款率、拨备覆盖率。\n\n现有材料涉及的是招商银行、民生银行、中信银行、平安银行、中国银行，其中：\n- 招商银行 2026 年 1-6 月净利息收入 112,022 百万元，不良贷款率 0.94%，拨备覆盖率 385.10%（招商银行 · 管理层讨论与分析 · p11-12；招商银行 · 公司简介与主要财务指标 · p8-9）。\n- 中信银行拨备覆盖率 203.12%、贷款拨备率 2.33%（中信银行 · 财务报表附注 · p33-34）。\n\n若要回答农业银行的数据，还需补充农业银行 2026 年半年度报告中的「净利息收入」「不良贷款率」「拨备覆盖率」披露页。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.4
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": 1,
+      "bm_rank": 1,
+      "rrf": 0.03279,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 18,
+      "pe": 20,
+      "vec_rank": 2,
+      "bm_rank": 10,
+      "rrf": 0.03041,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 33,
+      "pe": 34,
+      "vec_rank": 7,
+      "bm_rank": 5,
+      "rrf": 0.03031,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 12,
+      "pe": 13,
+      "vec_rank": 9,
+      "bm_rank": 4,
+      "rrf": 0.03012,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 59,
+      "pe": 61,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "company"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 16,
+      "pe": 17,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [
+     "不良率",
+     "不良贷款比率",
+     "贷款拨备覆盖率",
+     "拨备率"
+    ],
+    "answer": "检索到的材料可以回答农业银行的净利息收入、不良贷款率和拨备覆盖率，但需注意：材料中「利息净收入」与「净利息收入」为同一口径，以下按材料原文用词引用。\n\n**结论：**\n1. 农业银行 2026 年上半年利息净收入为 **3,122.44 亿元**（农业银行 · 财务报告 · p16-17）。\n2. 农业银行不良贷款率为 **1.25%**（农业银行 · 公司简介与主要财务指标 · p12-13）。\n3. 农业银行拨备覆盖率为 **290.10%**（农业银行 · 公司简介与主要财务指标 · p12-13）。\n\n**补充说明（避免口径混淆）：**\n- 材料中另有一处「不良贷款率 1.05%、拨备覆盖率 350.76%」，那是**县域金融业务**分部的指标，不是全行口径（农业银行 · 财务报告 · p59-61）。\n- 材料中「贷款拨备率 3.63」为另一指标（贷款减值准备余额除以发放贷款和垫款总额），与拨备覆盖率不同（农业银行 · 公司简介与主要财务指标 · p11-12）。",
+    "generation_error": null,
+    "refused": false,
+    "gt_in_answer": [
+     "3,122.44",
+     "1.25",
+     "290.10"
+    ],
+    "seconds": 1.5
+   }
+  }
+ },
+ {
+  "id": 8,
+  "type": "跨公司全景",
+  "question": "2026 年上半年哪几家银行的营业收入同比增速最高？",
+  "target": null,
+  "gt": [],
+  "note": "单块检索结构性无法回答",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 9,
+      "pe": 9,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 16,
+      "pe": 17,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "财务报告",
+      "ps": 23,
+      "pe": 25,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601998",
+      "name": "中信银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 9,
+      "pe": 10,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601166",
+      "name": "兴业银行",
+      "section": "管理层讨论与分析",
+      "ps": 18,
+      "pe": 18,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": null,
+    "top1_ok": null,
+    "expansion": [
+     "营收"
+    ],
+    "answer": "检索到的材料无法回答「2026 年上半年哪几家银行的营业收入同比增速最高」，因为材料只提供了部分银行的营收增速，且未覆盖全部 12 家银行，无法进行完整排序。\n\n材料中可确认的营收同比增速数据如下：\n\n- 中国银行：营业收入 3,569.03 亿元，同比增长 8.48%（中国银行 · 公司简介与主要财务指标 · p9）\n- 农业银行：营业收入 410,871（百万元），增长率 11.1%（农业银行 · 财务报告 · p16-17）\n- 兴业银行：营业收入 1,101.77 亿元，同比下降 0.25%（兴业银行 · 管理层讨论与分析 · p18）\n\n工商银行、中信银行两段材料中未给出营业收入同比增速（工商银行材料仅见营业收入 465,859 百万元及地区分布，中信银行材料为监管指标与行业情况），其余银行材料未涉及营收增速。\n\n因此，仅凭现有材料无法判断哪几家银行营收增速最高，还缺其余银行（以及工商银行、中信银行）2026 年上半年营业收入同比增速的披露数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.5
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 41,
+      "pe": 42,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601166",
+      "name": "兴业银行",
+      "section": "财务报表附注",
+      "ps": 234,
+      "pe": 235,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 21,
+      "pe": 23,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601998",
+      "name": "中信银行",
+      "section": "股份变动及股东情况",
+      "ps": 148,
+      "pe": 149,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "管理层讨论与分析",
+      "ps": 30,
+      "pe": 31,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": null,
+    "top1_ok": null,
+    "expansion": [
+     "营收"
+    ],
+    "answer": "检索到的材料无法回答「2026 年上半年哪几家银行的营业收入同比增速最高」。\n\n原因：材料中只有招商银行明确给出了营业收入同比增速（1,781.81亿元，同比增长4.83%）（招商银行 · 管理层讨论与分析 · p11-12）；其余各段材料均未披露可直接比较的营业收入同比增速——交通银行、农业银行、建设银行仅给出营业收入金额或分部数据，未给出同比增速；兴业银行、中信银行两段材料与营业收入增速无关。因此无法在多家银行之间进行增速排序。\n\n要回答该问题，还需要补充其余银行（如交通银行、农业银行、建设银行等）2026 年上半年营业收入的同比增速数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.2
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 9,
+      "pe": 9,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 16,
+      "pe": 17,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 41,
+      "pe": 42,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601398",
+      "name": "工商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 15,
+      "pe": 16,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601166",
+      "name": "兴业银行",
+      "section": "财务报表附注",
+      "ps": 234,
+      "pe": 235,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": null,
+    "top1_ok": null,
+    "expansion": [
+     "营收"
+    ],
+    "answer": "检索到的材料中，能直接给出营业收入同比增速的只有 3 家银行：农业银行 11.1%、中国银行 8.48%、招商银行 4.83%。其中农业银行最高。\n\n- 农业银行：营业收入 410,871（百万元），同比增速 11.1%（农业银行 · 财务报告 · p16-17）\n- 中国银行：营业收入 3,569.03 亿元，同比增长 8.48%（中国银行 · 公司简介与主要财务指标 · p9）\n- 招商银行：营业收入 1,781.81 亿元，同比增长 4.83%（招商银行 · 管理层讨论与分析 · p11-12）\n\n其余材料无法支撑该结论：交通银行材料只给出按业务板块划分的营业收入金额（合计 142,343 百万元），未给出同比增速；工商银行、兴业银行材料中未出现营业收入同比增速数据。因此，检索到的材料无法回答「哪几家银行增速最高」的完整排名，还缺其余银行（如交通银行、工商银行、兴业银行等）的营业收入同比增速数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.6
+   }
+  }
+ },
+ {
+  "id": 9,
+  "type": "跨公司全景",
+  "question": "12 家银行里，哪些银行的拨备覆盖率比 2025 年末上升了？",
+  "target": null,
+  "gt": [],
+  "note": "需 12 家逐一比对两个时点",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "600000",
+      "name": "浦发银行",
+      "section": "管理层讨论与分析",
+      "ps": 54,
+      "pe": 55,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "财务报表附注",
+      "ps": 183,
+      "pe": 185,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "财务报告",
+      "ps": 94,
+      "pe": 96,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601288",
+      "name": "农业银行",
+      "section": "财务报告",
+      "ps": 33,
+      "pe": 34,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601328",
+      "name": "交通银行",
+      "section": "管理层讨论与分析",
+      "ps": 36,
+      "pe": 37,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "财务报告",
+      "ps": 149,
+      "pe": 150,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": null,
+    "top1_ok": null,
+    "expansion": [
+     "贷款拨备覆盖率",
+     "拨备率"
+    ],
+    "answer": "检索到的材料无法回答。\n\n原因：材料中只有浦发银行一家披露了拨备覆盖率（报告期末 190.17%，上年末 193.89%），且该行是下降而非上升（浦发银行 · 管理层讨论与分析 · p54-55）。其余 11 家银行的拨备覆盖率数据在检索材料中均未出现，无法判断其升降。\n\n要回答该问题，还需补充其余 11 家银行 2026 年半年报中「拨备覆盖率」或「贷款拨备率」的报告期末与上年末数值。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.3
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "601818",
+      "name": "光大银行",
+      "section": "公司治理",
+      "ps": 17,
+      "pe": 18,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601818",
+      "name": "光大银行",
+      "section": "公司治理",
+      "ps": 18,
+      "pe": 20,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 13,
+      "pe": 15,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 28,
+      "pe": 29,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 11,
+      "pe": 12,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": null,
+    "top1_ok": null,
+    "expansion": [
+     "贷款拨备覆盖率",
+     "拨备率"
+    ],
+    "answer": "检索到的材料只能覆盖 3 家银行（光大银行、招商银行、平安银行），其余 9 家银行的拨备覆盖率数据未出现在材料中，因此无法回答「12 家银行里哪些上升」。\n\n就已覆盖的 3 家而言，**没有一家拨备覆盖率比 2025 年末上升**，均为下降：\n\n- 光大银行：拨备覆盖率 150.02%，比上年末下降 24.12 个百分点；贷款拨备率 2.16%，比上年末下降 0.06 个百分点（光大银行 · 公司治理 · p17-18）。\n- 招商银行：拨备覆盖率 385.10%，较上年末下降 6.69 个百分点；贷款拨备率 3.63%，较上年末下降 0.05 个百分点（招商银行 · 管理层讨论与分析 · p28-29）；同一数据亦见（招商银行 · 管理层讨论与分析 · p11-12）。\n- 平安银行：拨备覆盖率 219.58%，2025 年 12 月 31 日为 220.88%；拨贷比 2.30%，2025 年 12 月 31 日为 2.33%（平安银行 · 公司简介与主要财务指标 · p13-15）。\n\n还缺的材料：其余 9 家银行 2026 年半年度报告中披露的拨备覆盖率（或贷款拨备率）及其与 2025 年末的比较数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.8
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "600000",
+      "name": "浦发银行",
+      "section": "管理层讨论与分析",
+      "ps": 54,
+      "pe": 55,
+      "vec_rank": 1,
+      "bm_rank": 10,
+      "rrf": 0.03068,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601818",
+      "name": "光大银行",
+      "section": "公司治理",
+      "ps": 17,
+      "pe": 18,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601939",
+      "name": "建设银行",
+      "section": "财务报表附注",
+      "ps": 183,
+      "pe": 185,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601988",
+      "name": "中国银行",
+      "section": "财务报告",
+      "ps": 94,
+      "pe": 96,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601818",
+      "name": "光大银行",
+      "section": "公司治理",
+      "ps": 18,
+      "pe": 20,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": null,
+    "top1_ok": null,
+    "expansion": [
+     "贷款拨备覆盖率",
+     "拨备率"
+    ],
+    "answer": "检索到的材料无法回答「12 家银行里哪些银行的拨备覆盖率比 2025 年末上升了」。\n\n原因：材料只覆盖了 4 家银行（浦发银行、光大银行、建设银行、招商银行、中国银行中的部分），且其中只有 3 家披露了可比的拨备覆盖率数据，另外 8 家银行的拨备覆盖率数据完全缺失。就已披露的 3 家看，均为下降，没有上升的：\n\n- 浦发银行：报告期末 190.17%，上年末 193.89%，为下降（浦发银行 · 管理层讨论与分析 · p54-55）。\n- 光大银行：拨备覆盖率 150.02%，比上年末下降 24.12 个百分点（光大银行 · 公司治理 · p17-18；同一数据亦见 光大银行 · 公司治理 · p18-20）。\n- 招商银行：拨备覆盖率 385.10%，比上年末下降 6.69 个百分点（招商银行 · 公司简介与主要财务指标 · p8-9）。\n\n建设银行、中国银行的材料中未出现拨备覆盖率或贷款拨备率数据，无法判断。\n\n还缺：其余 8 家银行（以及建设银行、中国银行）2026 年半年报中「报告期末」与「上年末」的拨备覆盖率（或贷款拨备率）数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.9
+   }
+  }
+ },
+ {
+  "id": 10,
+  "type": "边界/抗幻觉",
+  "question": "招商银行 2025 年全年净利润是多少？",
+  "target": "600036",
+  "gt": [],
+  "note": "语料只有 2026H1，2025 全年不在语料里，应拒答",
+  "configs": {
+   "只用向量": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 90,
+      "pe": 92,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 164,
+      "pe": 166,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 171,
+      "pe": 172,
+      "vec_rank": 4,
+      "bm_rank": null,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 88,
+      "pe": 90,
+      "vec_rank": 5,
+      "bm_rank": null,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 137,
+      "pe": 139,
+      "vec_rank": 6,
+      "bm_rank": null,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "检索到的材料无法回答。\n\n材料均为招商银行 2026 年半年度报告，其中出现的净利润数字是 2026 年 1-6 月和 2025 年 1-6 月的半年度数据（如合并口径 2026 年 1-6 月净利润 76,919 百万元、2025 年 1-6 月净利润 75,405 百万元，出处：招商银行 · 财务报告 · p88-90），并非 2025 年全年净利润。材料中未提供招商银行 2025 年全年净利润数据，缺少 2025 年度报告或全年合并利润表。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 2.0
+   },
+   "只用 BM25": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司治理",
+      "ps": 72,
+      "pe": 73,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 22,
+      "pe": 24,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 39,
+      "pe": 40,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 46,
+      "pe": 47,
+      "vec_rank": null,
+      "bm_rank": 4,
+      "rrf": 0.01562,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "000001",
+      "name": "平安银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 17,
+      "pe": 18,
+      "vec_rank": null,
+      "bm_rank": 5,
+      "rrf": 0.01538,
+      "rounds": [
+       "global"
+      ]
+     },
+     {
+      "code": "601166",
+      "name": "兴业银行",
+      "section": "股份变动及股东情况",
+      "ps": 88,
+      "pe": 90,
+      "vec_rank": null,
+      "bm_rank": 6,
+      "rrf": 0.01515,
+      "rounds": [
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 4,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "检索到的材料无法回答招商银行2025年全年净利润是多少。\n\n材料[1]中仅出现「本公司2025年度净利润1,361.84亿元」，但该数字是用于说明2025年度利润分配方案中提取法定盈余公积的基数，且材料本身未明确其为「全年净利润」口径下的完整表述；除此之外，其余各段材料均未提供招商银行2025年全年净利润数据。\n\n要回答该问题，还需要招商银行2025年年度报告（或2025年度财务报告）中「主要会计数据和财务指标」或「利润表」章节披露的2025年全年净利润数据。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.2
+   },
+   "混合+公司过滤": {
+    "hits": [
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司简介与主要财务指标",
+      "ps": 8,
+      "pe": 9,
+      "vec_rank": 1,
+      "bm_rank": null,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "公司治理",
+      "ps": 72,
+      "pe": 73,
+      "vec_rank": null,
+      "bm_rank": 1,
+      "rrf": 0.01639,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 90,
+      "pe": 92,
+      "vec_rank": 2,
+      "bm_rank": null,
+      "rrf": 0.01613,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 22,
+      "pe": 24,
+      "vec_rank": null,
+      "bm_rank": 2,
+      "rrf": 0.01613,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "财务报告",
+      "ps": 164,
+      "pe": 166,
+      "vec_rank": 3,
+      "bm_rank": null,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     },
+     {
+      "code": "600036",
+      "name": "招商银行",
+      "section": "管理层讨论与分析",
+      "ps": 39,
+      "pe": 40,
+      "vec_rank": null,
+      "bm_rank": 3,
+      "rrf": 0.01587,
+      "rounds": [
+       "company",
+       "global"
+      ]
+     }
+    ],
+    "n_hit": 6,
+    "top1_ok": true,
+    "expansion": [],
+    "answer": "检索到的材料无法回答招商银行2025年全年净利润是多少。\n\n材料中与“净利润”相关的数据只有两类，均不是2025年全年净利润：\n- 2026年半年度报告中的合并利润表列示的是截至6月30日止6个月期间的净利润：2026年1-6月为66,910百万元、2025年1-6月为67,222百万元（招商银行 · 财务报告 · p90-92）。\n- 材料[2]提到“按照经审计的本公司2025年度净利润1,361.84亿元的10%提取法定盈余公积136.18亿元”，但这是本公司（母行）口径的2025年度净利润，且该表述出现在利润分配方案中，并非问题所问的“全年净利润”指标本身（招商银行 · 公司治理 · p72-73）。\n\n要回答该问题，还缺招商银行2025年年度报告（而非2026年半年度报告）中披露的2025年全年净利润数据，并需明确是“本集团”还是“本公司”口径。",
+    "generation_error": null,
+    "refused": true,
+    "gt_in_answer": [],
+    "seconds": 1.4
+   }
+  }
+ }
+]
